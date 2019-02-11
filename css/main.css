@@ -280,9 +280,11 @@ nav ul li a:hover{
 }
 .contact-pad li{
     margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
 }
 .contact-pad li i{
-    margin-right: 1em;
+    flex-basis: 10%;
 }
 .contact-pad li span{
     font-weight: bold;

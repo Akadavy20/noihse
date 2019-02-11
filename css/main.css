@@ -71,7 +71,7 @@ nav ul li a:hover{
 /* NAV BAR Slides */
 .slides-wrapper {
     width: 100%;
-    height: 50vw;
+    height: 40vw;
 	margin: auto;
 	/* background: #fff url("https://s-media-cache-ak0.pinimg.com/originals/a4/f2/cb/a4f2cb80ff2ae2772e80bf30e9d78d4c.gif") no-repeat center; */
 	background-size: 200px 200px;
@@ -85,8 +85,12 @@ nav ul li a:hover{
     width: 100%;
     margin: none;
     padding: none;
+    overflow: hidden;
+    transition: all 2s ease-out;
 }
-
+.slides-wrapper:hover .slide{
+    transform: scale(1.1);
+}
 #slide1{
 	background: transparent url("../img/blur-close-up-colorful-67581.jpg") no-repeat center;
 	background-size: cover;
@@ -139,7 +143,8 @@ nav ul li a:hover{
     background-color: rgba(0,0,0,.3);
 }
 .caption{
-  position: relative;
+  position:absolute;
+  z-index: 2;
   height: 30%;
   width: 40%;
   top: 20%;
@@ -147,8 +152,9 @@ nav ul li a:hover{
   transform: translate(-20%, -20%);
   /* background: rgba(0,0,0,0.75); */
   color: white;
+  font-size: 1.3em;
   padding: 20px;
-  transition: all ease;
+  transition: all 2s ease;
 }
 .caption p{
 
@@ -279,36 +285,50 @@ nav ul li a:hover{
     font-weight: bold;
 }
 .contact-pad li{
+    font-size: 1.2em;
     margin-top: 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .contact-pad li i{
-    flex-basis: 10%;
+    flex-basis: 5%;
+    transition: all .2s ease;
+}
+.contact-pad li:hover i{
+    transform: scale(1.2);
 }
 .contact-pad li .next-icon{
-    flex-basis: 30%;
 }
 .contact-pad li .bold{
     font-weight: bold;
 }
 .form-group{
-
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
 }
-form input, textarea{
+.group input{
+    flex-basis: 49%;
+}
+.form-group input, textarea{
     border-radius: 3px;
     border: 1px solid var(--gris);
     padding: 2px 5px;
     height: 30px;
     margin: 5px 0;
+    transition: all .2s ease;
 }
-form input:hover, textarea:hover{
+input:hover, textarea:hover{
     border: 2px solid red;
+    transform: scale(1.05);
 }
-form textarea{
-    width: 96.5%;
+.form-group textarea{
+    flex-basis: 100%;
     height: 50px;
     color: var(--gris);
+}
+.groupelebouton{
+    justify-content: flex-start;
 }
 .button{
     background-color: var(--rouge);
@@ -318,7 +338,7 @@ form textarea{
     text-align: center;
     font-size: 1.3em;
     padding: 10px;
-    width: 10%;
+    width: 150px;
     margin: 5px;
     border-radius: 5px;
     transition: all .5s;

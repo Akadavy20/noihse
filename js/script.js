@@ -71,5 +71,8 @@ $(function () {
     scrollanim('#pack5', 'fadeInBottom');
     scrollanim('#pack6', 'fadeInRight');
 
+        $('.slide').focus(function(){
+            $(this).css('transform', 'scale(1.1)');
+        });
 });
 

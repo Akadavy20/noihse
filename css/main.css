@@ -279,6 +279,7 @@ nav ul li a:hover{
     font-weight: bold;
 }
 .contact-pad li span{
+    margin-left: 1em;
     font-weight: 400;
 }
 .form-group{

@@ -50,7 +50,7 @@ nav ul{
     justify-content: space-around;
 }
 
-nav ul li a{
+ul li a{
     width: 20%;
     font-family: 'Bree Serif', sans-serif;
     font-size: 1.6vw;
@@ -58,13 +58,11 @@ nav ul li a{
     color: #222;
     text-transform: uppercase;
     /* color: #fff; */
-    transition: .3s ease;
+    transition: .1s ease;
 }
-nav ul li a:active{
-
-}
-nav ul li a:hover{
+ul li a:hover{
     color: red;
+    transform: scale(1.1);
 }
 
 /* INDEX PAGE SLIDERS */

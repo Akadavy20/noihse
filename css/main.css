@@ -278,6 +278,12 @@ nav ul li a:hover{
 #contact-section span{
     font-weight: bold;
 }
+.contact-pad li{
+    line-height: 1em;
+}
+.contact-pad li i{
+    margin-right: 1em;
+}
 .contact-pad li span{
     font-weight: bold;
 }

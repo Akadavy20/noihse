@@ -40,7 +40,7 @@ nav{
 }
 nav .brand{
     flex-basis: 20%;
-    color: --var(rouge);
+    color: var(--rouge);
 }
 nav ul{
     display: flex;
@@ -64,7 +64,7 @@ nav ul li a:active{
 nav ul li a:hover{
     color: red;
     /* background-color: red; */
-    transform:translate(-2%, 10%);
+    transform:translate(-2%, -2%);
     /* transition: 1s ease-in-out; */
 }
 

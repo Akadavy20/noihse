@@ -330,3 +330,9 @@ form textarea{
     opacity: 1;
     right: 0;
 }
+
+footer{
+    background-color: var(--rouge);
+    text-align: center;
+    padding: 20px;
+}

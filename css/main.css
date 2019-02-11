@@ -259,12 +259,13 @@ nav ul li a:hover{
 }
 .contact-section .container-contact{
     display: flex;
+    justify-content: space-around;
 }
 .left-pad{
-
+    flex-basis: 50%;
 }
 .right-pad{
-
+    flex-basis: 50%;
 }
 #contact-section{
     display: flex;

@@ -59,6 +59,17 @@ $(function () {
             });
         });
     }
-    onScrollClass('fadeOut');
+    function scrollanim(item, animation){
+        if (isScrolledIntoView(item) === true) {
+                    $(item).addClass(animation);
+                }
+    }
+    scrollanim('#pack1', 'fadeInLeft');
+    scrollanim('#pack2', 'fadeInTop');
+    scrollanim('#pack3', 'fadeInRight');
+    scrollanim('#pack4', 'fadeInLeft');
+    scrollanim('#pack5', 'fadeInBottom');
+    scrollanim('#pack6', 'fadeInRight');
+
 });
 

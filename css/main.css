@@ -279,7 +279,7 @@ nav ul li a:hover{
     font-weight: bold;
 }
 .contact-pad li{
-    line-height: 1em;
+    margin-top: 5px;
 }
 .contact-pad li i{
     margin-right: 1em;

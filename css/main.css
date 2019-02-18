@@ -97,7 +97,7 @@ ul li a:hover{
     transform: scale(1.1);
 }
 #slide1{
-	background: transparent url("../img/blur-close-up-colorful-67581.jpg") no-repeat center;
+	background: transparent url("../img/camera.jpg") no-repeat center;
 	background-size: cover;
 	animation: left1 20s infinite;
 }
@@ -110,7 +110,7 @@ ul li a:hover{
 
 }
 #slide3 {
-	background: transparent url("../img/cleanin-products.jpg") no-repeat center;
+	background: transparent url("../img/printer.jpg") no-repeat center;
 	background-size: cover;
 	animation: left3 20s infinite;
 	left: 200%;

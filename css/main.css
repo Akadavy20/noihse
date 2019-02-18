@@ -99,20 +99,20 @@ ul li a:hover{
 #slide1{
 	background: transparent url("../img/camera.jpeg") no-repeat center;
 	background-size: cover;
-	animation: left1 20s infinite;
+	animation: left1 25s infinite;
 }
 
 #slide2 {
 	background: transparent url("../img/black-and-white-books-business-251225.jpg") no-repeat center;
 	background-size: cover;
-	animation: left2 20s infinite;
+	animation: left2 25s infinite;
 	left: 100%;
 
 }
 #slide3 {
 	background: transparent url("../img/green.jpeg") no-repeat center;
 	background-size: cover;
-	animation: left3 20s infinite;
+	animation: left3 25s infinite;
 	left: 200%;
 }
 

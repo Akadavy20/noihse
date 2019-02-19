@@ -61,7 +61,7 @@ ul li a{
     width: 20%;
     font-family: 'Bree Serif', sans-serif;
     font-size: 1em;
-    font-weight: bold;
+    /*font-weight: bold;*/
     color: #222;
     text-transform: uppercase;
     /* color: #fff; */
@@ -93,9 +93,9 @@ ul li a:hover{
     overflow: hidden;
     transition: all 2s ease-out;
 }
-.slides-wrapper:hover .slide{
+/*.slides-wrapper:hover .slide{
     transform: scale(1.1);
-}
+}*/
 #slide1{
 	background: transparent url("../img/camera.jpeg") no-repeat center;
 	background-size: cover;

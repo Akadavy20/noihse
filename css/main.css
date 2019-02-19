@@ -3,7 +3,7 @@
     --jaune: #ffe07f;
     /* --rouge: #ca9b9a; */
     --rouge-hover: #f10d0d;
-    --rouge:#f32424;;
+    --rouge:rgb(243, 36, 36);;
     --bleu: #7f7fff;
     --gris: #444;
     --blanc: #fff;
@@ -378,9 +378,14 @@ input:focus, textarea:focus{
 }
 
 footer{
-    background-color: var(--rouge);
     margin-top: 50px;
+    height: 600px;
+    color: white;
     text-align: center;
     font-weight: bold;
     padding: 20px;
+    background: var(--rouge) url('../img/footer.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

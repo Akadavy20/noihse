@@ -57,7 +57,7 @@ nav ul{
     justify-content: space-around;
 }
 
-ul li a{
+nav ul li a{
     width: 20%;
     font-family: Helvetica, sans-serif;
     font-size: 1em;
@@ -67,7 +67,7 @@ ul li a{
     /* color: #fff; */
     transition: .1s ease;
 }
-ul li a:hover{
+nav ul li a:hover{
     color: red;
     /*transform: scale(1.1);*/
 }

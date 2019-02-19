@@ -31,16 +31,19 @@ ul{
 .rouge{
     color: var(--rouge);
 }
-
+/* Warning */
 /* Loader */
-#loader{
+.warning{
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
     z-index: 777;
-    background: url('../img/loader-circle.gif') center no-repeat #fff;
+    background: center no-repeat #fff;
 }
 nav{
     display: flex;

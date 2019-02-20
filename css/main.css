@@ -394,7 +394,7 @@ footer{
     text-align: center;
     font-weight: bold;
     padding: 20px;
-    background: var(--rouge) url('../img/footer.jpeg');
+    background-image:url('../img/footer.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

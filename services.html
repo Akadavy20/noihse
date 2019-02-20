@@ -18,18 +18,20 @@
 </head>
 
 <body>
-    <div class="warning">
+    <!-- <div class="warning">
         <p>
             <i class="fa fa-tools"></i>
             SITE EN MAINTENANCE
         </p>
-    </div>
+    </div> -->
     <!-- Header -->
     <nav>
-        <h1 class="brand animate fadeInLeft">NOIHSE</h1>
-        <ul class="animate fadeInRight">
+        <h1 class="brand animated fadeInLeft">
+            <a href="index.html" style="color:red;">NOIHSE</a>
+        </h1>
+        <ul class="animated zoomIn">
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="services.html" style="color:red;">Services</a></li>
+            <li><a href="services.html"vstyle="color:red;">Services</a></li>
             <li><a href="about.html">A propos</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -38,10 +40,10 @@
 
     <!-- Services -->
     <div class="service-container scroll-animations" id="services">
-        <h2 class="rouge animated fadeInLeft">Découvrez nos services</h2>
+        <h2 class="rouge animated fadeInDown">Découvrez nos services</h2>
         <div class="service-wrapper">
             <!-- pack service 1 -->
-            <div class="pack animated" id="pack1">
+            <div class="pack animated slideInLeft fadeInDown" id="pack1">
                 <!-- <img src="img/bulb-dark-hearts-170781.jpg" alt="pack-img-name"> -->
                 <div class="overlay">
                     <div class="text">
@@ -61,7 +63,7 @@
                 </div>
             </div>
             <!-- pack service 2 -->
-            <div class="pack animated" id="pack2">
+            <div class="pack animated slideInDown" id="pack2">
                 <!-- <img src="img/color-cogs.jpg" alt="pack-img-name"> -->
                 <div class="overlay">
                     <div class="text">
@@ -78,7 +80,7 @@
                 </div>
             </div>
             <!-- pack service 3 -->
-            <div class="pack animated" id="pack3">
+            <div class="pack animated slideInRight fadeInDown" id="pack3">
                 <!-- <img src="img/bucket-building-cleaning-756883.jpg" alt="pack-img-name"> -->
                 <div class="overlay">
                     <div class="text">
@@ -90,7 +92,7 @@
                 </div>
             </div>
             <!-- pack service 4 -->
-            <div class="pack animated" id="pack4">
+            <div class="pack animated slideInLeft fadeInUp" id="pack4">
                 <!-- <img src="img/colored-pencils.jpg" alt="pack-img-name"> -->
                 <div class="overlay">
                     <div class="text">
@@ -103,7 +105,7 @@
                 </div>
             </div>
             <!-- pack service 5 -->
-            <div class="pack animated" id="pack5">
+            <div class="pack animated slideInUp" id="pack5">
                 <!-- <img src="img/action-adult-boots-209230.jpg" alt="pack-img-name"> -->
                 <div class="overlay">
                     <div class="text">
@@ -115,7 +117,7 @@
                 </div>
             </div>
             <!-- pack service 6 -->
-            <div class="pack animated" id="pack6">
+            <div class="pack animated slideInRight fadeInUp" id="pack6">
                 <!-- <img src="img/blur-board-game-challenge-209712.jpg" alt="pack-img-name"> -->
                 <div class="overlay">
                     <div class="text">
@@ -128,10 +130,87 @@
             </div>
         </div>
     </div><!--  -->
+    <!-- Slogan toka  -->
+    <div class="mission-section white-bg upper">
+        <div class="container" style="text-align: center;padding: 80px 0;">
+            <div class=" animated slideInLeft">
+                Vous avez besoin d'un service rapide et efficace ?
+            </div >
+            <a href="about.html" class="button animated zoomIn" style="margin-top: 20px;">
+                <span>Contactez-nous !</span>
+            </a>
+
+        </div>
+    </div>
 
     </div><!-- Contact -->
     <footer>
-        <p>Copyright &copy; NOIHSE 2019. Tous droits réservés.</p>
+        <div class="contact-section animated fadeInLeft" id="contact">
+
+
+            <div class="container-contact animated fadeIn">
+                <div class="left-pad">
+                    <h3 class="rouge">Contactez-nous</h3>
+                    <ul class="contact-pad">
+                        <li>
+                            <i class="rouge fa fa-map-marker-alt"></i>
+                            <span class="next-icon">
+                                <span class="bold">Addresse :</span> Cocody Palmeraie Bessikoi, <br/> Non loin de la pharmacie
+                                St Viateur
+                            </span>
+                        </li>
+                        <br>
+                        <li>
+                            <i class="rouge fa fa-address-card"></i>
+                            <span class="next-icon">
+                                <span class="bold">Téléphone :</span> 07 71 91 62
+                            </span>
+
+                        </li>
+                        <br>
+                        <li>
+                            <i class=" rouge fa fa-phone"></i>
+                            <span class="next-icon">
+                                <span class="bold"> Fixe :</span> 22 46 76 49
+                            </span>
+                        </li>
+                        <br>
+                        <li>
+                            <i class="rouge fa fa-envelope"></i>
+                            <span class="next-icon">
+                                <span class="bold"> Email :</span> noihse1@gmail.com
+                            </span>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-pad">
+                    <h3 class="rouge animated fadeIn">Envoyez-nous un message</h3>
+                    <form action="">
+                        <div class="form-group group">
+                            <input type="text" placeholder="Nom">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="form-group group">
+                            <input type="text" placeholder="Entreprise">
+                            <input type="text" placeholder="Objet du message">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group groupelebouton">
+                            <button type="submit" class="button">
+                                <span>Envoyer</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div><!-- Contact -->
+        <div class="footer-bottom">
+            <p>Copyright &copy; NOIHSE 2019. Tous droits réservés.</p>
+        </div>
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>

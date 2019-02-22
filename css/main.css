@@ -407,7 +407,8 @@ footer{
     text-align: center;
     font-weight: bold;
     padding: 20px;
-    background-image:url('../img/footer.jpeg');
+    /*background-image:url('../img/footer.jpeg');*/
+    background: url('../img/vcard.gif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

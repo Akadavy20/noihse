@@ -1,52 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Amane Hosanna">
-    <title>NOIHSE | Bienvenue</title>
-
-    <link rel="icon" href="img/logo-ico.png">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato|Lobster|Open+Sans+Condensed:300|Playfair+Display" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
-
-    <link rel="stylesheet" href="js/animate.css">
-</head>
-
-<body>
-    <!-- <div class="warning">
-        <p>
-            <i class="fa fa-tools"></i>
-            SITE EN MAINTENANCE
-        </p>
-    </div> -->
-    <!-- Header -->
-    <nav>
-        <h1 class="brand animated fadeInLeft">
-            <a href="index.html" style="color:red;">NOIHSE</a>
-        </h1>
-        <ul class="animated zoomIn">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">A propos</a></li>
-            <li><a href="contact.html" style="color:red;">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="contact-section animated fadeInDownBig" id="contact">
-        <div class="container">
-            <h2 class="rouge ">Où nous trouver</h2>
-            <!-- <p>NOIHSE est située ...</p> -->
-            <div class="map">
-                <iframe src="https://maps.google.com/maps?q=NOIHSE&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
-                    marginwidth="0"></iframe>
-            </div>
-        </div>
-    </div>
-    <footer>
+<footer>
         <div class="contact-section animated fadeInLeft" id="contact">
 
 
@@ -116,6 +68,3 @@
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
-</body>
-
-</html>

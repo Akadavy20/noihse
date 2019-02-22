@@ -1,12 +1,14 @@
 /* General */
 :root{
     --jaune: #ffe07f;
+    --couleur_logo:#f5bb18;
     /* --rouge: #ca9b9a; */
     --rouge-hover: #f10d0d;
     --rouge:rgb(243, 36, 36);;
     --bleu: #7f7fff;
     --gris: #444;
     --blanc: #fff;
+    --bottom_color:#000;
 }
 *{
     box-sizing: border-box;
@@ -325,7 +327,7 @@ section.about *{
     transition: all .2s ease;
 }
 .contact-pad li:hover i{
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 .contact-pad li .next-icon{
 }
@@ -342,7 +344,7 @@ section.about *{
 }
 .form-group input, textarea{
     border-radius: 3px;
-    border: 1px solid white;
+    border: 1px solid var(--bottom_color);
     padding: 2px 5px;
     height: 30px;
     margin: 5px 0;
@@ -350,7 +352,7 @@ section.about *{
     background: transparent;
 }
 .form-group input::placeholder, textarea::placeholder{
-    color: white;
+    color: var(--bottom_color);
 }
 input:hover, textarea:hover{
     border: 2px solid red;
@@ -403,12 +405,12 @@ input:focus, textarea:focus{
 }
 
 footer{
-    color: white;
+    color: var(--bottom_color);
     text-align: center;
     font-weight: bold;
     padding: 20px;
     /*background-image:url('../img/footer.jpeg');*/
-    background: url('../img/vcard.gif');
+    background: url('../img/vcardclear.gif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

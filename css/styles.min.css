@@ -1,0 +1,207 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: red;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+nav ul li a.active {
+    color: red;
+    font-weight: bold;
+}
+
+/* Showcase */
+.showcase {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slides-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.caption {
+    max-width: 600px;
+    padding: 1rem;
+}
+
+.caption h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.caption p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: red;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: darkred;
+}
+
+/* Mission Section */
+.mission-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.mission-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.mission-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.left-pad, .right-pad {
+    flex: 1;
+}
+
+.left-pad h3, .right-pad h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-pad li {
+    margin-bottom: 1rem;
+}
+
+.contact-pad i {
+    margin-right: 0.5rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: darkred;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .contact-section {
+        flex-direction: column;
+    }
+}

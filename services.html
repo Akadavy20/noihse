@@ -1,220 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Amane Hosanna">
-    <title>NOIHSE | Bienvenue</title>
-
+    <meta name="author" content="Davy Miles Zabri">
+    <title>NOIHSE | Services</title>
     <link rel="icon" href="img/logo-ico.png">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato|Lobster|Open+Sans+Condensed:300|Playfair+Display" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
-
-    <link rel="stylesheet" href="js/animate.css">
+    <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
-    <!-- <div class="warning">
-        <p>
-            <i class="fa fa-tools"></i>
-            SITE EN MAINTENANCE
-        </p>
-    </div> -->
-    <!-- Header -->
-    <!-- <div id="loader"></div> -->
+<!-- Header -->
+<header>
     <nav>
-        <h1 class="brand animated fadeInLeft">
-            <a href="index.html" style="color:red;">NOIHSE</a>
-        </h1>
-        <ul class="animated zoomIn">
+        <h1 class="brand"><a href="index.html">NOIHSE</a></h1>
+        <ul>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="services.html"vstyle="color:red;">Services</a></li>
-            <li><a href="about.html">A propos</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="about.html">À propos</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <!--  -->
+</header>
 
-    <!-- Services -->
-    <div class="service-container scroll-animations" id="services">
-        <h2 class="rouge animated fadeInDown">Découvrez nos services</h2>
-        <div class="service-wrapper">
-            <!-- pack service 1 -->
-            <div class="pack animated slideInLeft fadeInDown" id="pack1">
-                <!-- <img src="img/bulb-dark-hearts-170781.jpg" alt="pack-img-name"> -->
-                <div class="overlay">
-                    <div class="text">
-                        <h3>Conception Visuelle</h3>
-                        <p>
-                            Tout format
-                            <ul>
-                                <li>Affiches</li>
-                                <li>Papier A4</li>
-                                <li>Faire-parts</li>
-                                <li>Calendriers</li>
-                                <li>Cartes de visite</li>
-                                <li>Cartes de membres</li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
+<!-- Main Content -->
+<main>
+    <section class="services">
+        <h2>Nos Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Conception Visuelle</h3>
+                <p>Affiches, flyers, cartes de visite, et plus encore.</p>
             </div>
-            <!-- pack service 2 -->
-            <div class="pack animated slideInDown" id="pack2">
-                <!-- <img src="img/color-cogs.jpg" alt="pack-img-name"> -->
-                <div class="overlay">
-                    <div class="text">
-                        <h3>Couverture média</h3>
-                        <p>
-                            Soyez plus actifs et plus visibles pour votre clientele
-                            <ul>
-                                <li>Montage Video</li>
-                                <li>Community Management</li>
-                                <li></li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
+            <div class="service-card">
+                <h3>Développement Web</h3>
+                <p>Création de sites web dynamiques et interactifs.</p>
             </div>
-            <!-- pack service 3 -->
-            <div class="pack animated slideInRight fadeInDown" id="pack3">
-                <!-- <img src="img/bucket-building-cleaning-756883.jpg" alt="pack-img-name"> -->
-                <div class="overlay">
-                    <div class="text">
-                        <h3>Conception de Sites web</h3>
-                        <p>
-                            Nous vous proposons des sites web dynamiques et interactifs. De la conception à l'hébergement, la mise en ligne et le référencement.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- pack service 4 -->
-            <div class="pack animated slideInLeft fadeInUp" id="pack4">
-                <!-- <img src="img/colored-pencils.jpg" alt="pack-img-name"> -->
-                <div class="overlay">
-                    <div class="text">
-                        <h3>Nettoyage et entretien</h3>
-                        <p>
-                            NOIHSE s'occupe de tout ce qui concerne l'entretien ! Que ce soit dératisation, désinsectisation, entretien général, nettoyage
-                            fin chantier ou même nettoyage industriel, nous vous offrons un service de qualité
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- pack service 5 -->
-            <div class="pack animated slideInUp" id="pack5">
-                <!-- <img src="img/action-adult-boots-209230.jpg" alt="pack-img-name"> -->
-                <div class="overlay">
-                    <div class="text">
-                        <h3>Installation d'équipements d'hygiène</h3>
-                        <p>
-                            NOIHSE gère aussi l'installation et la maintenance de tout équipement d'hygiène et sécurité environnement
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- pack service 6 -->
-            <div class="pack animated slideInRight fadeInUp" id="pack6">
-                <!-- <img src="img/blur-board-game-challenge-209712.jpg" alt="pack-img-name"> -->
-                <div class="overlay">
-                    <div class="text">
-                        <h3>Nettoyage en hauteur</h3>
-                        <p>
-                            Vous avez des vitres, facades, toitures ou murs difficiles à entretenir du fait de leur hauteur ? <br> NOIHSE s'en occupe
-                        </p>
-                    </div>
-                </div>
+            <div class="service-card">
+                <h3>Nettoyage Industriel</h3>
+                <p>Services de nettoyage et entretien de qualité.</p>
             </div>
         </div>
-    </div><!--  -->
-    <!-- Slogan toka  -->
-    <div class="mission-section white-bg upper">
-        <div class="container" style="text-align: center;padding: 80px 0;">
-            <div class=" animated slideInLeft">
-                Vous avez besoin d'un service rapide et efficace ?
-            </div >
-            <a href="about.html" class="button animated zoomIn" style="margin-top: 20px;">
-                <span>Contactez-nous !</span>
-            </a>
+    </section>
+</main>
 
-        </div>
+<!-- Footer -->
+<footer>
+    <div class="footer-bottom">
+        <p>Copyright &copy; NOIHSE 2023. Tous droits réservés.</p>
     </div>
+</footer>
 
-    </div><!-- Contact -->
-    <footer>
-        <div class="contact-section animated fadeInLeft" id="contact">
-
-
-            <div class="container-contact animated fadeIn">
-                <div class="left-pad">
-                    <h3 class="rouge">Contactez-nous</h3>
-                    <ul class="contact-pad">
-                        <li>
-                            <i class="rouge fa fa-map-marker-alt"></i>
-                            <span class="next-icon">
-                                <span class="bold">Addresse :</span> Cocody Palmeraie Bessikoi, <br/> Non loin de la pharmacie
-                                Saint Viateur
-                            </span>
-                        </li>
-                        <br>
-                        <li>
-                            <i class="rouge fa fa-address-card"></i>
-                            <span class="next-icon">
-                                <span class="bold">Téléphone :</span> 07 71 91 62
-                            </span>
-
-                        </li>
-                        <br>
-                        <li>
-                            <i class=" rouge fa fa-phone"></i>
-                            <span class="next-icon">
-                                <span class="bold"> Fixe :</span> 22 46 76 49
-                            </span>
-                        </li>
-                        <br>
-                        <li>
-                            <i class="rouge fa fa-envelope"></i>
-                            <span class="next-icon">
-                                <span class="bold"> Email :</span> noihse1@gmail.com
-                            </span>
-
-                        </li>
-                    </ul>
-                </div>
-                <div class="right-pad">
-                    <h3 class="rouge animated fadeIn">Envoyez-nous un message</h3>
-                    <form action="">
-                        <div class="form-group group">
-                            <input type="text" placeholder="Nom">
-                            <input type="email" placeholder="Email">
-                        </div>
-                        <div class="form-group group">
-                            <input type="text" placeholder="Entreprise">
-                            <input type="text" placeholder="Objet du message">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                        </div>
-                        <div class="form-group groupelebouton">
-                            <button type="submit" class="button">
-                                <span>Envoyer</span>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        </div><!-- Contact -->
-        <div class="footer-bottom">
-            <p>Copyright &copy; NOIHSE 2019. Tous droits réservés.</p>
-        </div>
-    </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/script.js"></script>
+<script src="js/scripts.min.js"></script>
 </body>
 
 </html>

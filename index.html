@@ -1,179 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Amane Hosanna">
-    <!-- <meta name="refresh" content="30"> -->
+    <meta name="author" content="Davy Miles Zabri">
     <title>NOIHSE | Bienvenue</title>
-
     <link rel="icon" href="img/logo-ico.png">
-
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-
-    <link rel="stylesheet" href="css/slider.css">
-    <script src="js/slider.js"></script>
-
-    <link rel="stylesheet" href="js/animate.css">
+    <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
-    <!-- <div class="warning">
-        <p>
-            <i class="fa fa-tools"></i>
-            SITE EN MAINTENANCE
-        </p> -->
-    </div>
-    <!-- Header -->
+<!-- Header -->
+<header>
     <nav>
-        <h1 class="brand animated fadeInLeft">
-            <a href="index.html" style="color:red;">NOIHSE</a>
-        </h1>
-        <ul class="animated zoomIn">
-            <li><a href="index.html" style="color:red;">Accueil</a></li>
+        <h1 class="brand"><a href="index.html">NOIHSE</a></h1>
+        <ul>
+            <li><a href="index.html" class="active">Accueil</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">A propos</a></li>
+            <li><a href="about.html">À propos</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <!-- Showcase -->
-    <div class="showcase">
+</header>
+
+<!-- Showcase -->
+<main>
+    <section class="showcase">
         <div class="slides-wrapper">
             <div class="slide" id="slide1">
                 <div class="slide-overlay">
-                    <div class="caption animated fadeInDown">
-                        <div class="caption-overlay">
-                            <h1 class="rouge" style="text-align:left;">Création Visuelle</h1>
-                            <p>
-                                Passez vos messages et informations sur des affiches, flyers dans le format de votre choix en quantité illimitée
-                            </p>
-                            <a href="#pack1" class="button">
-                                <span>Voir plus</span>
-                            </a>
-                        </div>
+                    <div class="caption">
+                        <h1>Création Visuelle</h1>
+                        <p>Passez vos messages et informations sur des affiches, flyers dans le format de votre choix en quantité illimitée.</p>
+                        <a href="#" class="button">Voir plus</a>
                     </div>
                 </div>
             </div>
             <div class="slide" id="slide2">
                 <div class="slide-overlay">
-                    <div class="caption animated fadeInDown">
-                        <h1 class="rouge" style="text-align:left;">Développement Web</h1>
-                        <p>
-                            Faites connaitre votre entreprise et élargissez votre portée à l'international avec des sites web dynamiques et attrayants
-                            !
-                        </p>
-                        <a href="#pack3" class="button">
-                            <span>En savoir plus</span>
-                        </a>
+                    <div class="caption">
+                        <h1>Développement Web</h1>
+                        <p>Faites connaitre votre entreprise et élargissez votre portée à l'international avec des sites web dynamiques et attrayants !</p>
+                        <a href="#" class="button">En savoir plus</a>
                     </div>
                 </div>
             </div>
             <div class="slide" id="slide3">
                 <div class="slide-overlay">
-                    <div class="caption animated fadeInDown">
-                        <h1 class="rouge" style="text-align:left;">Hygiène Sécurité et Environnement</h1>
-                        <p>
-                            Redonnez à votre environnement son éclat, nous vous proposons un service de nettoyage et entretien de qualité ! Besoin d'un
-                            nettoyage rapide et efficace de vos locaux ?
-                        </p>
-                        <a href="#pack4" class="button">
-                            <span>Contactez-nous !</span>
-                        </a>
+                    <div class="caption">
+                        <h1>Hygiène Sécurité et Environnement</h1>
+                        <p>Redonnez à votre environnement son éclat avec un service de nettoyage et entretien de qualité !</p>
+                        <a href="#" class="button">Contactez-nous !</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Nos mission -->
-    <div class="mission-section">
-        <div class="container white-bg upper">
-            <h2 class="rouge animated slideInLeft">Nouvelle Organisation Industrielle en Hygiène Sécurité et Environnement
-                (NOIHSE)
-            </h2>
-            <div style="text-transform: uppercase;" class=" animated fadeIn">
-                Apporter à nos clients des services de qualité en vue d'optimiser leur productivité et d'améliorer leur environnement de
-                travail est notre mission
-            </div>
-            <a href="about.html" class="button animated zoomIn" style="margin-top: 20px;">
-                <span>Découvrez NOIHSE</span>
-            </a>
-
+        <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
+        <button class="slider-btn next" onclick="nextSlide()">&#10095;</button>
+        <div class="pagination">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
         </div>
-    </div>
-    <!-- Contact -->
-    <footer>
-        <div class="contact-section animated fadeInLeft" id="contact">
+    </section>
 
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="container">
+            <h2>Nouvelle Organisation Industrielle en Hygiène Sécurité et Environnement (NOIHSE)</h2>
+            <p>Apporter à nos clients des services de qualité en vue d'optimiser leur productivité et d'améliorer leur environnement de travail est notre mission.</p>
+            <a href="about.html" class="button">Découvrez NOIHSE</a>
+        </div>
+    </section>
+</main>
 
-            <div class="container-contact animated fadeIn">
-                <div class="left-pad">
-                    <h3 class="rouge">Contactez-nous</h3>
-                    <ul class="contact-pad">
-                        <li>
-                            <i class="rouge fa fa-map-marker-alt"></i>
-                            <span class="next-icon">
-                                <span class="bold">Addresse :</span> Cocody Palmeraie Bessikoi, <br/> Non loin de la pharmacie
-                                Saint Viateur
-                            </span>
-                        </li>
-                        <br>
-                        <li>
-                            <i class="rouge fa fa-address-card"></i>
-                            <span class="next-icon">
-                                <span class="bold">Téléphone :</span> 07 71 91 62
-                            </span>
-
-                        </li>
-                        <br>
-                        <li>
-                            <i class=" rouge fa fa-phone"></i>
-                            <span class="next-icon">
-                                <span class="bold"> Fixe :</span> 22 46 76 49
-                            </span>
-                        </li>
-                        <br>
-                        <li>
-                            <i class="rouge fa fa-envelope"></i>
-                            <span class="next-icon">
-                                <span class="bold"> Email :</span> noihse1@gmail.com
-                            </span>
-
-                        </li>
-                    </ul>
-                </div>
-                <div class="right-pad">
-                    <h3 class="rouge animated fadeIn">Envoyez-nous un message</h3>
-                    <form action="">
-                        <div class="form-group group">
-                            <input type="text" placeholder="Nom">
-                            <input type="email" placeholder="Email">
-                        </div>
-                        <div class="form-group group">
+<!-- Footer -->
+<footer>
+    <div class="contact-section" id="contact">
+        <div class="container-contact">
+            <div class="left-pad">
+                <h3>Contactez-nous</h3>
+                <ul class="contact-pad">
+                    <li><i class="fa fa-map-marker-alt"></i> Cocody Palmeraie Bessikoi, <br> Non loin de la pharmacie Saint Viateur</li>
+                    <li><i class="fa fa-phone"></i> 07 71 91 62</li>
+                    <li><i class="fa fa-envelope"></i> noihse1@gmail.com</li>
+                </ul>
+            </div>
+            <div class="right-pad">
+                <h3>Envoyez-nous un message</h3>
+                <form action="#">
+                    <div class="form-group">
+                        <label>
+                            <input type="text" placeholder="Nom" required>
+                        </label>
+                        <label>
+                            <input type="email" placeholder="Email" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
                             <input type="text" placeholder="Entreprise">
+                        </label>
+                        <label>
                             <input type="text" placeholder="Objet du message">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                        </div>
-                        <div class="form-group groupelebouton">
-                            <button type="submit" class="button">
-                                <span>Envoyer</span>
-                            </button>
-                        </div>
-                    </form>
-                </div>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <textarea placeholder="Message" required></textarea>
+                        </label>
+                    </div>
+                    <button type="submit" class="button">Envoyer</button>
+                </form>
             </div>
         </div>
-        </div><!-- Contact -->
-        <div class="footer-bottom">
-            <p>Copyright &copy; NOIHSE 2019. Tous droits réservés.</p>
-        </div>
-    </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/script.js"></script>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright &copy; NOIHSE 2023. Tous droits réservés.</p>
+    </div>
+</footer>
+
+<script src="js/scripts.min.js"></script>
 </body>
 
 </html>

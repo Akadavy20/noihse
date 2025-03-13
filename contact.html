@@ -1,121 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Amane Hosanna">
-    <title>NOIHSE | Bienvenue</title>
-
+    <meta name="author" content="Davy Miles Zabri">
+    <title>NOIHSE | Contact</title>
     <link rel="icon" href="img/logo-ico.png">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato|Lobster|Open+Sans+Condensed:300|Playfair+Display" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
-
-    <link rel="stylesheet" href="js/animate.css">
+    <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
-    <!-- <div class="warning">
-        <p>
-            <i class="fa fa-tools"></i>
-            SITE EN MAINTENANCE
-        </p>
-    </div> -->
-    <!-- Header -->
+<!-- Header -->
+<header>
     <nav>
-        <h1 class="brand animated fadeInLeft">
-            <a href="index.html" style="color:red;">NOIHSE</a>
-        </h1>
-        <ul class="animated zoomIn">
+        <h1 class="brand"><a href="index.html">NOIHSE</a></h1>
+        <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">A propos</a></li>
-            <li><a href="contact.html" style="color:red;">Contact</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
     </nav>
-    <div class="contact-section animated fadeInDownBig" id="contact">
-        <div class="container">
-            <h2 class="rouge ">Où nous trouver</h2>
-            <!-- <p>NOIHSE est située ...</p> -->
-            <div class="map">
-                <iframe src="https://maps.google.com/maps?q=NOIHSE&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
-                    marginwidth="0"></iframe>
-            </div>
+</header>
+
+<!-- Main Content -->
+<main>
+    <section class="contact">
+        <h2>Contactez-nous</h2>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.123456789012!2d-4.123456789012345!3d5.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMDcnMjIuNCJOIDTCsDA3JzIyLjQiVw!5e0!3m2!1sen!2sci!4v1234567890123!5m2!1sen!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
+        <form action="#">
+            <div class="form-group">
+                <label>
+                    <input type="text" placeholder="Nom" required>
+                </label>
+                <label>
+                    <input type="email" placeholder="Email" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="text" placeholder="Entreprise">
+                </label>
+                <label>
+                    <input type="text" placeholder="Objet du message">
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <textarea placeholder="Message" required></textarea>
+                </label>
+            </div>
+            <button type="submit" class="button">Envoyer</button>
+        </form>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-bottom">
+        <p>Copyright &copy; NOIHSE 2023. Tous droits réservés.</p>
     </div>
-    <footer>
-        <div class="contact-section animated fadeInLeft" id="contact">
+</footer>
 
-
-            <div class="container-contact animated fadeIn">
-                <div class="left-pad">
-                    <h3 class="rouge">Contactez-nous</h3>
-                    <ul class="contact-pad">
-                        <li>
-                            <i class="rouge fa fa-map-marker-alt"></i>
-                            <span class="next-icon">
-                                <span class="bold">Addresse :</span> Cocody Palmeraie Bessikoi, <br/> Non loin de la pharmacie
-                                Saint Viateur
-                            </span>
-                        </li>
-                        <br>
-                        <li>
-                            <i class="rouge fa fa-address-card"></i>
-                            <span class="next-icon">
-                                <span class="bold">Téléphone :</span> 07 71 91 62
-                            </span>
-
-                        </li>
-                        <br>
-                        <li>
-                            <i class=" rouge fa fa-phone"></i>
-                            <span class="next-icon">
-                                <span class="bold"> Fixe :</span> 22 46 76 49
-                            </span>
-                        </li>
-                        <br>
-                        <li>
-                            <i class="rouge fa fa-envelope"></i>
-                            <span class="next-icon">
-                                <span class="bold"> Email :</span> noihse1@gmail.com
-                            </span>
-
-                        </li>
-                    </ul>
-                </div>
-                <div class="right-pad">
-                    <h3 class="rouge animated fadeIn">Envoyez-nous un message</h3>
-                    <form action="">
-                        <div class="form-group group">
-                            <input type="text" placeholder="Nom">
-                            <input type="email" placeholder="Email">
-                        </div>
-                        <div class="form-group group">
-                            <input type="text" placeholder="Entreprise">
-                            <input type="text" placeholder="Objet du message">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                        </div>
-                        <div class="form-group groupelebouton">
-                            <button type="submit" class="button">
-                                <span>Envoyer</span>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        </div><!-- Contact -->
-        <div class="footer-bottom">
-            <p>Copyright &copy; NOIHSE 2019. Tous droits réservés.</p>
-        </div>
-    </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/script.js"></script>
+<script src="js/scripts.min.js"></script>
 </body>
 
 </html>

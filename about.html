@@ -1,212 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Amane Hosanna">
-    <!-- <meta name="refresh" content="30"> -->
-    <title>NOIHSE | Bienvenue</title>
-
+    <meta name="author" content="Davy Miles Zabri">
+    <title>NOIHSE | À propos</title>
     <link rel="icon" href="img/logo-ico.png">
-    <link rel="stylesheet" href="css/main.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato|Lobster|Open+Sans+Condensed:300|Playfair+Display" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/slider.css">
-    <script src="js/slider.js"></script>
-
-    <link rel="stylesheet" href="js/animate.css">
+    <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
-    <!-- <div class="warning">
-        <p>
-            <i class="fa fa-tools"></i>
-            SITE EN MAINTENANCE
-        </p>
-    </div> -->
-    <!-- Header -->
+<!-- Header -->
+<header>
     <nav>
-        <h1 class="brand animated fadeInLeft">
-            <a href="index.html" style="color:red;">NOIHSE</a>
-        </h1>
-        <ul class="animated zoomIn">
+        <h1 class="brand"><a href="index.html">NOIHSE</a></h1>
+        <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="about.html" style="color:red;">A propos</a></li>
+            <li><a href="about.html" class="active">À propos</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <main class="white-bg" style="text-align:left;">
-        <!-- Qui sommes-nous -->
-        <section class="about" style="background-color: rgba(0,0,0,.1);background-image: url('img/bg-white.jpg');background-repeat: no-repeat;background-size: cover;">
-            <div class="container">
-                <div class="contained animated fadeInLeftBig">
-                    <h2 class="rouge">Découvrez l'entreprise</h2>
-                    <p>NOIHSE (Nouvelle Organisation Industrielle en Hygiène Sécurité et Environnement) est une société spécialisée
-                        dans les domaines du <span>Nettoyage et Entretien industriel</span> et de la <span>Conception Visuelle.</span></p>
-                    <p>La compétence, le professionnalisme, la rigueur et le sérieux de ses dirigeants sont ce qui caractérise
-                        le mieux l'entreprise. Car tous sont issus d'une formation de qualiticien.</p>
-                    <div class="contained">
-                        Qui pourrait parler de nettoyage sans avoir de notions en qualité. Nous avons connaissance des normes ISO 90001, OHSAS 18001,
-                        ISO 14001, ISO 22000. <br><br>Ces connaissances sont des pérogatives pour
-                        garantir un niveau d'hygiène et de sécurité satisfaisant à votre structure. Les exigences de ces
-                        normes étant connues nous vous garantissons un standard. Le programme de nettoyage et désinfection
-                        de l'entreprise vise à ce que le sol, les murs, les plafonds, les vitres, l'ambiance des salles de
-                        travail, le matériel et les appareils utilisés pour le travail soient maintenus en bon état de propreté.
-                        Un environnement propre évite de constituer une source de contammination pour le personnel et le
-                        client. Une main d'oeuvre qualifiée et professionnelle est l'atout de notre équipe.
-                    </div>
-                </div>
-                <div class="mission-section animated fadeInRightBig">
-                    <h2 class="rouge">Nos missions</h2>
-                    <p>
-                        NOIHSE est spécialisée dans les domaines : <br><br> - de la <a href="services.html#pack1" style="color:#000;text-decoration:underline;">conception
-                            visuelle des mesures de sensibilisations en hygiène, sécurité et environnement </a><br><br> -
-                        de l’<a href="services.html#pack3" style="color:#000;text-decoration:underline;">entretien de toutes
-                            surfaces et surtout une maitrise de l’entretien en industrie agro-alimentaire</a>
-                        <br><br> Les axes principaux ci-dessus renferment : <br><br>- la création d’animation vidéo pour
-                        des conférences, des cérémonies ; la confection d’affiches (micro perforé, vinyle, Kakemono) , de
-                        badges et une aide à la créativité et à la couverture médias surtout des évènements en entreprise,
-                        des séminaires, des ateliers etc <br><br> - l’entretien en hauteur et des sols , des usines de café-
-                        cacao , de noix de cajou ( anacarde) ; le pest control , la désinsectisation. NOIHSE est constituée
-                        d’une équipe dynamique regroupant plusieurs disciplines. Dans l’attente d’une réponse favorable à
-                        notre offre, veuillez croire, Monsieur le Directeur Général, en l’expression de mes salutations distinguées.
+</header>
 
-                    </p>
-                </div>
-            </div>
-            <div class="row animated fadeInUp">
-                Pour notre entreprise, il est important de pouvoir apporter une pleine et entière satisfaction dans les prestations effectuées.
-            </div>
-        </section>
-        <!-- Partenaires slider -->
-        <section class="partenaires">
-            <h2 class="rouge animated fadeInUp">Ils continuent de nous faire confiance</h2>
-            <style type="text/css">
-                section.partenaires .container {
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                }
-
-                section.partenaires .container .block {
-                    flex-basis: 20%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                section.partenaires .container .block img {
-                    width: 100%;
-                    height: auto;
-                }
-
-                section.partenaires .container .block .text {}
-            </style>
-            <div class="container animated zoomIn">
-                <div class="block">
-                    <img src="img/logo/casa.gif" style="width:60%">
-                    <!-- <div class="text">Société Cajou des savanes CASA </div> -->
-                </div>
-                <div class="block">
-                    <img src="img/logo/bollore.png" style="width:60%">
-                    <!-- <div class="text">Bolloré Africa Logistique</div> -->
-                </div>
-
-                <div class="block">
-                    <img src="img/logo/awahus.png" style="width:60%">
-                    <!-- <div class="text">AWAHUS SERVICE</div> -->
-                </div>
-
-                <div class="block">
-                    <img src="img/logo/foragri.png" style="width:60%">
-                    <!-- <div class="text">FORAGRI</div> -->
-                </div>
-                <div class="block">
-                    <img src="img/logo/olam.jpg" style="width:60%">
-                    <!-- <div class="text">OLAM Cocoa Precessing</div> -->
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- Contact -->
-    <footer>
-        <div class="contact-section animated fadeInLeft" id="contact">
-
-
-            <div class="container-contact animated fadeIn">
-                <div class="left-pad">
-                    <h3 class="rouge">Contactez-nous</h3>
-                    <ul class="contact-pad">
-                        <li>
-                            <i class="rouge fa fa-map-marker-alt"></i>
-                            <span class="next-icon">
-                                <span class="bold">Addresse :</span> Cocody Palmeraie Bessikoi, <br/> Non loin de la pharmacie
-                                Saint Viateur
-                            </span>
-                        </li>
-                        <br>
-                        <li>
-                            <i class="rouge fa fa-address-card"></i>
-                            <span class="next-icon">
-                                <span class="bold">Téléphone :</span> 07 71 91 62
-                            </span>
-
-                        </li>
-                        <br>
-                        <li>
-                            <i class=" rouge fa fa-phone"></i>
-                            <span class="next-icon">
-                                <span class="bold"> Fixe :</span> 22 46 76 49
-                            </span>
-                        </li>
-                        <br>
-                        <li>
-                            <i class="rouge fa fa-envelope"></i>
-                            <span class="next-icon">
-                                <span class="bold"> Email :</span> noihse1@gmail.com
-                            </span>
-
-                        </li>
-                    </ul>
-                </div>
-                <div class="right-pad">
-                    <h3 class="rouge animated fadeIn">Envoyez-nous un message</h3>
-                    <form action="">
-                        <div class="form-group group">
-                            <input type="text" placeholder="Nom">
-                            <input type="email" placeholder="Email">
-                        </div>
-                        <div class="form-group group">
-                            <input type="text" placeholder="Entreprise">
-                            <input type="text" placeholder="Objet du message">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                        </div>
-                        <div class="form-group groupelebouton">
-                            <button type="submit" class="button">
-                                <span>Envoyer</span>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+<!-- Main Content -->
+<main>
+    <section class="about">
+        <div class="container">
+            <h2>Découvrez l'entreprise</h2>
+            <p>NOIHSE (Nouvelle Organisation Industrielle en Hygiène Sécurité et Environnement) est une société spécialisée dans les domaines du nettoyage et entretien industriel et de la conception visuelle.</p>
+            <p>La compétence, le professionnalisme, la rigueur et le sérieux de ses dirigeants sont ce qui caractérise le mieux l'entreprise. Car tous sont issus d'une formation de qualiticien.</p>
         </div>
-        </div><!-- Contact -->
-        <div class="footer-bottom">
-            <p>Copyright &copy; NOIHSE 2019. Tous droits réservés.</p>
+    </section>
+
+    <!-- Partenaires -->
+    <section class="partenaires">
+        <h2>Ils nous font confiance</h2>
+        <div class="container">
+            <div class="block"><img src="img/logo/casa.gif" alt="CASA"></div>
+            <div class="block"><img src="img/logo/bollore.png" alt="Bolloré"></div>
+            <div class="block"><img src="img/logo/awahus.png" alt="AWAHUS"></div>
+            <div class="block"><img src="img/logo/foragri.png" alt="FORAGRI"></div>
+            <div class="block"><img src="img/logo/olam.jpg" alt="OLAM"></div>
         </div>
-    </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/script.js"></script>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-bottom">
+        <p>Copyright &copy; NOIHSE 2023. Tous droits réservés.</p>
+    </div>
+</footer>
+
+<script src="js/scripts.min.js"></script>
 </body>
 
 </html>
